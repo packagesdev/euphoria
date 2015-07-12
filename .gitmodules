@@ -1,0 +1,3 @@
+[submodule "Euphoria/rsscommon"]
+	path = Euphoria/rsscommon
+	url = https://github.com/packagesdev/rsscommon

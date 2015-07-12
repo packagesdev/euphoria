@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F43D42601B51D99200C68261 /* nowhere_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D425E1B51D99200C68261 /* nowhere_thumbnail.png */; };
+		F43D42611B51D99200C68261 /* nowhere_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D425F1B51D99200C68261 /* nowhere_thumbnail@2x.png */; };
+		F43D42641B51D9C500C68261 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = F43D42631B51D9C500C68261 /* Localized.strings */; };
+		F43D42671B51DA9600C68261 /* echo_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D42651B51DA9600C68261 /* echo_thumbnail.png */; };
+		F43D42681B51DA9600C68261 /* echo_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D42661B51DA9600C68261 /* echo_thumbnail@2x.png */; };
+		F43D426B1B51DB5600C68261 /* kaleidoscope_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D42691B51DB5600C68261 /* kaleidoscope_thumbnail.png */; };
+		F43D426C1B51DB5600C68261 /* kaleidoscope_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D426A1B51DB5600C68261 /* kaleidoscope_thumbnail@2x.png */; };
+		F458950F1B51E3F0007CB60A /* cubism_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F458950D1B51E3F0007CB60A /* cubism_thumbnail.png */; };
+		F45895101B51E3F0007CB60A /* cubism_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F458950E1B51E3F0007CB60A /* cubism_thumbnail@2x.png */; };
+		F45895131B51E41E007CB60A /* badmath_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F45895111B51E41E007CB60A /* badmath_thumbnail.png */; };
+		F45895141B51E41E007CB60A /* badmath_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F45895121B51E41E007CB60A /* badmath_thumbnail@2x.png */; };
+		F4672A721B4DCD2400664E05 /* custom_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4672A6E1B4DCD2400664E05 /* custom_thumbnail.png */; };
+		F4672A731B4DCD2400664E05 /* custom_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4672A6F1B4DCD2400664E05 /* custom_thumbnail@2x.png */; };
+		F4672A741B4DCD2400664E05 /* random_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4672A701B4DCD2400664E05 /* random_thumbnail.png */; };
+		F4672A751B4DCD2400664E05 /* random_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4672A711B4DCD2400664E05 /* random_thumbnail@2x.png */; };
+		F4672A8C1B4DCD3D00664E05 /* RSSAboutBoxWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A761B4DCD3D00664E05 /* RSSAboutBoxWindowController.h */; };
+		F4672A8D1B4DCD3D00664E05 /* RSSAboutBoxWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A771B4DCD3D00664E05 /* RSSAboutBoxWindowController.m */; };
+		F4672A8E1B4DCD3D00664E05 /* RSSAboutBoxWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4672A781B4DCD3D00664E05 /* RSSAboutBoxWindowController.xib */; };
+		F4672A8F1B4DCD3D00664E05 /* RSSCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A791B4DCD3D00664E05 /* RSSCollectionView.h */; };
+		F4672A901B4DCD3D00664E05 /* RSSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A7A1B4DCD3D00664E05 /* RSSCollectionView.m */; };
+		F4672A911B4DCD3D00664E05 /* RSSCollectionViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A7B1B4DCD3D00664E05 /* RSSCollectionViewItem.h */; };
+		F4672A921B4DCD3D00664E05 /* RSSCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A7C1B4DCD3D00664E05 /* RSSCollectionViewItem.m */; };
+		F4672A931B4DCD3D00664E05 /* RSSCollectionViewItemLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A7D1B4DCD3D00664E05 /* RSSCollectionViewItemLabel.h */; };
+		F4672A941B4DCD3D00664E05 /* RSSCollectionViewItemLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A7E1B4DCD3D00664E05 /* RSSCollectionViewItemLabel.m */; };
+		F4672A951B4DCD3D00664E05 /* RSSConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A7F1B4DCD3D00664E05 /* RSSConfigurationWindowController.h */; };
+		F4672A961B4DCD3D00664E05 /* RSSConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A801B4DCD3D00664E05 /* RSSConfigurationWindowController.m */; };
+		F4672A971B4DCD3D00664E05 /* RSSLightGrayBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A811B4DCD3D00664E05 /* RSSLightGrayBackgroundView.h */; };
+		F4672A981B4DCD3D00664E05 /* RSSLightGrayBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A821B4DCD3D00664E05 /* RSSLightGrayBackgroundView.m */; };
+		F4672A991B4DCD3D00664E05 /* RSSSecondaryBox.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A831B4DCD3D00664E05 /* RSSSecondaryBox.h */; };
+		F4672A9A1B4DCD3D00664E05 /* RSSSecondaryBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A841B4DCD3D00664E05 /* RSSSecondaryBox.m */; };
+		F4672A9B1B4DCD3D00664E05 /* RSSSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A851B4DCD3D00664E05 /* RSSSettings.h */; };
+		F4672A9C1B4DCD3D00664E05 /* RSSSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A861B4DCD3D00664E05 /* RSSSettings.m */; };
+		F4672A9D1B4DCD3D00664E05 /* RSSStandardSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4672A871B4DCD3D00664E05 /* RSSStandardSettingsView.xib */; };
+		F4672A9E1B4DCD3D00664E05 /* RSSUserDefaults+Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A881B4DCD3D00664E05 /* RSSUserDefaults+Constants.h */; };
+		F4672A9F1B4DCD3D00664E05 /* RSSUserDefaults+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A891B4DCD3D00664E05 /* RSSUserDefaults+Constants.m */; };
+		F4672AA01B4DCD3D00664E05 /* RSSWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672A8A1B4DCD3D00664E05 /* RSSWindow.h */; };
+		F4672AA11B4DCD3D00664E05 /* RSSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672A8B1B4DCD3D00664E05 /* RSSWindow.m */; };
+		F4672AA51B4DCD8000664E05 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4672AA31B4DCD8000664E05 /* Localizable.strings */; };
+		F4672AB31B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672AB01B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h */; };
+		F4672AB41B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672AB11B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m */; };
+		F4672AB51B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4672AB21B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib */; };
+		F4672ABB1B4DCF5D00664E05 /* Euphoria.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4672AB71B4DCF5D00664E05 /* Euphoria.cpp */; };
+		F4672ABC1B4DCF5D00664E05 /* Euphoria.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672AB81B4DCF5D00664E05 /* Euphoria.h */; };
+		F4672ABE1B4DCF5D00664E05 /* texture.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672ABA1B4DCF5D00664E05 /* texture.h */; };
+		F49F65C81B4C858A0099BF2B /* RSSEuphoriaView.h in Headers */ = {isa = PBXBuildFile; fileRef = F49F65C71B4C858A0099BF2B /* RSSEuphoriaView.h */; };
+		F49F65CA1B4C858A0099BF2B /* RSSEuphoriaView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F49F65C91B4C858A0099BF2B /* RSSEuphoriaView.mm */; };
+		F49F65D91B4C88930099BF2B /* RSSEuphoriaSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F49F65D71B4C88930099BF2B /* RSSEuphoriaSettings.h */; };
+		F49F65DA1B4C88930099BF2B /* RSSEuphoriaSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F49F65D81B4C88930099BF2B /* RSSEuphoriaSettings.m */; };
+		F4B6DC591B4F48530050A936 /* rsMath.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B6DC511B4F48530050A936 /* rsMath.h */; };
+		F4B6DC5A1B4F48530050A936 /* rsMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B6DC521B4F48530050A936 /* rsMatrix.cpp */; };
+		F4B6DC5B1B4F48530050A936 /* rsMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B6DC531B4F48530050A936 /* rsMatrix.h */; };
+		F4B6DC5C1B4F48530050A936 /* rsQuat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B6DC541B4F48530050A936 /* rsQuat.cpp */; };
+		F4B6DC5D1B4F48530050A936 /* rsQuat.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B6DC551B4F48530050A936 /* rsQuat.h */; };
+		F4B6DC5E1B4F48530050A936 /* rsTrigonometry.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B6DC561B4F48530050A936 /* rsTrigonometry.h */; };
+		F4B6DC5F1B4F48530050A936 /* rsVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B6DC571B4F48530050A936 /* rsVec.cpp */; };
+		F4B6DC601B4F48530050A936 /* rsVec.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B6DC581B4F48530050A936 /* rsVec.h */; };
+		F4B6DC641B4F48750050A936 /* Rgbhsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B6DC621B4F48750050A936 /* Rgbhsl.cpp */; };
+		F4B6DC651B4F48750050A936 /* Rgbhsl.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B6DC631B4F48750050A936 /* Rgbhsl.h */; };
+		F4DA56961B5293360062C1FA /* mtheory_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DA56941B5293360062C1FA /* mtheory_thumbnail.png */; };
+		F4DA56971B5293360062C1FA /* mtheory_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DA56951B5293360062C1FA /* mtheory_thumbnail@2x.png */; };
+		F4DA569A1B5293430062C1FA /* uhftem_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DA56981B5293430062C1FA /* uhftem_thumbnail.png */; };
+		F4DA569B1B5293430062C1FA /* uhftem_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DA56991B5293430062C1FA /* uhftem_thumbnail@2x.png */; };
+		F4DC04591B52C881007E647E /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DC04571B52C881007E647E /* thumbnail.png */; };
+		F4DC045A1B52C881007E647E /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DC04581B52C881007E647E /* thumbnail@2x.png */; };
+		F4E4B7601B51C44D00C3C908 /* regular_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E4B75E1B51C44D00C3C908 /* regular_thumbnail.png */; };
+		F4E4B7611B51C44D00C3C908 /* regular_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E4B75F1B51C44D00C3C908 /* regular_thumbnail@2x.png */; };
+		F4E4B7641B51C4E300C3C908 /* grid_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E4B7621B51C4E300C3C908 /* grid_thumbnail.png */; };
+		F4E4B7651B51C4E300C3C908 /* grid_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E4B7631B51C4E300C3C908 /* grid_thumbnail@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4672AAA1B4DCD9300664E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4672AA61B4DCD9300664E05 /* refafactor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F49477B31B15330700763450;
+			remoteInfo = refafactor;
+		};
+		F4672AAC1B4DCD9A00664E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4672AA61B4DCD9300664E05 /* refafactor.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F49477B21B15330700763450;
+			remoteInfo = refafactor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F43D425E1B51D99200C68261 /* nowhere_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nowhere_thumbnail.png; path = images/nowhere_thumbnail.png; sourceTree = "<group>"; };
+		F43D425F1B51D99200C68261 /* nowhere_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nowhere_thumbnail@2x.png"; path = "images/nowhere_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F43D42631B51D9C500C68261 /* Localized.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
+		F43D42651B51DA9600C68261 /* echo_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = echo_thumbnail.png; path = images/echo_thumbnail.png; sourceTree = "<group>"; };
+		F43D42661B51DA9600C68261 /* echo_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "echo_thumbnail@2x.png"; path = "images/echo_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F43D42691B51DB5600C68261 /* kaleidoscope_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kaleidoscope_thumbnail.png; path = images/kaleidoscope_thumbnail.png; sourceTree = "<group>"; };
+		F43D426A1B51DB5600C68261 /* kaleidoscope_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kaleidoscope_thumbnail@2x.png"; path = "images/kaleidoscope_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F458950D1B51E3F0007CB60A /* cubism_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cubism_thumbnail.png; path = images/cubism_thumbnail.png; sourceTree = "<group>"; };
+		F458950E1B51E3F0007CB60A /* cubism_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cubism_thumbnail@2x.png"; path = "images/cubism_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F45895111B51E41E007CB60A /* badmath_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = badmath_thumbnail.png; path = images/badmath_thumbnail.png; sourceTree = "<group>"; };
+		F45895121B51E41E007CB60A /* badmath_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badmath_thumbnail@2x.png"; path = "images/badmath_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4672A6E1B4DCD2400664E05 /* custom_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_thumbnail.png; path = rsscommon/CreativeCommons/custom_thumbnail.png; sourceTree = "<group>"; };
+		F4672A6F1B4DCD2400664E05 /* custom_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "custom_thumbnail@2x.png"; path = "rsscommon/CreativeCommons/custom_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4672A701B4DCD2400664E05 /* random_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = random_thumbnail.png; path = rsscommon/CreativeCommons/random_thumbnail.png; sourceTree = "<group>"; };
+		F4672A711B4DCD2400664E05 /* random_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "random_thumbnail@2x.png"; path = "rsscommon/CreativeCommons/random_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4672A761B4DCD3D00664E05 /* RSSAboutBoxWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSAboutBoxWindowController.h; path = rsscommon/RSSAboutBoxWindowController.h; sourceTree = "<group>"; };
+		F4672A771B4DCD3D00664E05 /* RSSAboutBoxWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSAboutBoxWindowController.m; path = rsscommon/RSSAboutBoxWindowController.m; sourceTree = "<group>"; };
+		F4672A781B4DCD3D00664E05 /* RSSAboutBoxWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RSSAboutBoxWindowController.xib; path = rsscommon/RSSAboutBoxWindowController.xib; sourceTree = "<group>"; };
+		F4672A791B4DCD3D00664E05 /* RSSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSCollectionView.h; path = rsscommon/RSSCollectionView.h; sourceTree = "<group>"; };
+		F4672A7A1B4DCD3D00664E05 /* RSSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSCollectionView.m; path = rsscommon/RSSCollectionView.m; sourceTree = "<group>"; };
+		F4672A7B1B4DCD3D00664E05 /* RSSCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSCollectionViewItem.h; path = rsscommon/RSSCollectionViewItem.h; sourceTree = "<group>"; };
+		F4672A7C1B4DCD3D00664E05 /* RSSCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSCollectionViewItem.m; path = rsscommon/RSSCollectionViewItem.m; sourceTree = "<group>"; };
+		F4672A7D1B4DCD3D00664E05 /* RSSCollectionViewItemLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSCollectionViewItemLabel.h; path = rsscommon/RSSCollectionViewItemLabel.h; sourceTree = "<group>"; };
+		F4672A7E1B4DCD3D00664E05 /* RSSCollectionViewItemLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSCollectionViewItemLabel.m; path = rsscommon/RSSCollectionViewItemLabel.m; sourceTree = "<group>"; };
+		F4672A7F1B4DCD3D00664E05 /* RSSConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSConfigurationWindowController.h; path = rsscommon/RSSConfigurationWindowController.h; sourceTree = "<group>"; };
+		F4672A801B4DCD3D00664E05 /* RSSConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSConfigurationWindowController.m; path = rsscommon/RSSConfigurationWindowController.m; sourceTree = "<group>"; };
+		F4672A811B4DCD3D00664E05 /* RSSLightGrayBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSLightGrayBackgroundView.h; path = rsscommon/RSSLightGrayBackgroundView.h; sourceTree = "<group>"; };
+		F4672A821B4DCD3D00664E05 /* RSSLightGrayBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSLightGrayBackgroundView.m; path = rsscommon/RSSLightGrayBackgroundView.m; sourceTree = "<group>"; };
+		F4672A831B4DCD3D00664E05 /* RSSSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSSecondaryBox.h; path = rsscommon/RSSSecondaryBox.h; sourceTree = "<group>"; };
+		F4672A841B4DCD3D00664E05 /* RSSSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSSecondaryBox.m; path = rsscommon/RSSSecondaryBox.m; sourceTree = "<group>"; };
+		F4672A851B4DCD3D00664E05 /* RSSSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSSettings.h; path = rsscommon/RSSSettings.h; sourceTree = "<group>"; };
+		F4672A861B4DCD3D00664E05 /* RSSSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSSettings.m; path = rsscommon/RSSSettings.m; sourceTree = "<group>"; };
+		F4672A871B4DCD3D00664E05 /* RSSStandardSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RSSStandardSettingsView.xib; path = rsscommon/RSSStandardSettingsView.xib; sourceTree = "<group>"; };
+		F4672A881B4DCD3D00664E05 /* RSSUserDefaults+Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RSSUserDefaults+Constants.h"; path = "rsscommon/RSSUserDefaults+Constants.h"; sourceTree = "<group>"; };
+		F4672A891B4DCD3D00664E05 /* RSSUserDefaults+Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RSSUserDefaults+Constants.m"; path = "rsscommon/RSSUserDefaults+Constants.m"; sourceTree = "<group>"; };
+		F4672A8A1B4DCD3D00664E05 /* RSSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSWindow.h; path = rsscommon/RSSWindow.h; sourceTree = "<group>"; };
+		F4672A8B1B4DCD3D00664E05 /* RSSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSWindow.m; path = rsscommon/RSSWindow.m; sourceTree = "<group>"; };
+		F4672AA41B4DCD8000664E05 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = rsscommon/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4672AA61B4DCD9300664E05 /* refafactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = refafactor.xcodeproj; path = Euphoria/rsscommon/refafactor/refafactor.xcodeproj; sourceTree = "<group>"; };
+		F4672AB01B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEuphoriaConfigurationWindowController.h; sourceTree = "<group>"; };
+		F4672AB11B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEuphoriaConfigurationWindowController.m; sourceTree = "<group>"; };
+		F4672AB21B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4672AB71B4DCF5D00664E05 /* Euphoria.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Euphoria.cpp; path = GPL/Euphoria.cpp; sourceTree = "<group>"; };
+		F4672AB81B4DCF5D00664E05 /* Euphoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euphoria.h; path = GPL/Euphoria.h; sourceTree = "<group>"; };
+		F4672ABA1B4DCF5D00664E05 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = GPL/texture.h; sourceTree = "<group>"; };
+		F49F65C21B4C858A0099BF2B /* Euphoria.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Euphoria.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49F65C61B4C858A0099BF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49F65C71B4C858A0099BF2B /* RSSEuphoriaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSEuphoriaView.h; sourceTree = "<group>"; };
+		F49F65C91B4C858A0099BF2B /* RSSEuphoriaView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RSSEuphoriaView.mm; sourceTree = "<group>"; };
+		F49F65D71B4C88930099BF2B /* RSSEuphoriaSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEuphoriaSettings.h; sourceTree = "<group>"; };
+		F49F65D81B4C88930099BF2B /* RSSEuphoriaSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEuphoriaSettings.m; sourceTree = "<group>"; };
+		F4B6DC511B4F48530050A936 /* rsMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsMath.h; path = rsscommon/GPL/rsMath/rsMath.h; sourceTree = "<group>"; };
+		F4B6DC521B4F48530050A936 /* rsMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rsMatrix.cpp; path = rsscommon/GPL/rsMath/rsMatrix.cpp; sourceTree = "<group>"; };
+		F4B6DC531B4F48530050A936 /* rsMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsMatrix.h; path = rsscommon/GPL/rsMath/rsMatrix.h; sourceTree = "<group>"; };
+		F4B6DC541B4F48530050A936 /* rsQuat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rsQuat.cpp; path = rsscommon/GPL/rsMath/rsQuat.cpp; sourceTree = "<group>"; };
+		F4B6DC551B4F48530050A936 /* rsQuat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsQuat.h; path = rsscommon/GPL/rsMath/rsQuat.h; sourceTree = "<group>"; };
+		F4B6DC561B4F48530050A936 /* rsTrigonometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsTrigonometry.h; path = rsscommon/GPL/rsMath/rsTrigonometry.h; sourceTree = "<group>"; };
+		F4B6DC571B4F48530050A936 /* rsVec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rsVec.cpp; path = rsscommon/GPL/rsMath/rsVec.cpp; sourceTree = "<group>"; };
+		F4B6DC581B4F48530050A936 /* rsVec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsVec.h; path = rsscommon/GPL/rsMath/rsVec.h; sourceTree = "<group>"; };
+		F4B6DC621B4F48750050A936 /* Rgbhsl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rgbhsl.cpp; path = rsscommon/GPL/Rgbhsl/Rgbhsl.cpp; sourceTree = "<group>"; };
+		F4B6DC631B4F48750050A936 /* Rgbhsl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rgbhsl.h; path = rsscommon/GPL/Rgbhsl/Rgbhsl.h; sourceTree = "<group>"; };
+		F4DA56941B5293360062C1FA /* mtheory_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mtheory_thumbnail.png; path = images/mtheory_thumbnail.png; sourceTree = "<group>"; };
+		F4DA56951B5293360062C1FA /* mtheory_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mtheory_thumbnail@2x.png"; path = "images/mtheory_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4DA56981B5293430062C1FA /* uhftem_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uhftem_thumbnail.png; path = images/uhftem_thumbnail.png; sourceTree = "<group>"; };
+		F4DA56991B5293430062C1FA /* uhftem_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uhftem_thumbnail@2x.png"; path = "images/uhftem_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4DC04571B52C881007E647E /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbnail.png; path = images/thumbnail.png; sourceTree = "<group>"; };
+		F4DC04581B52C881007E647E /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "images/thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4E4B75E1B51C44D00C3C908 /* regular_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = regular_thumbnail.png; path = images/regular_thumbnail.png; sourceTree = "<group>"; };
+		F4E4B75F1B51C44D00C3C908 /* regular_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "regular_thumbnail@2x.png"; path = "images/regular_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4E4B7621B51C4E300C3C908 /* grid_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid_thumbnail.png; path = images/grid_thumbnail.png; sourceTree = "<group>"; };
+		F4E4B7631B51C4E300C3C908 /* grid_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grid_thumbnail@2x.png"; path = "images/grid_thumbnail@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49F65BE1B4C858A0099BF2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4672AA71B4DCD9300664E05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4672AAB1B4DCD9300664E05 /* refafactor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4672AAF1B4DCE0600664E05 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F4672AB01B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h */,
+				F4672AB11B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m */,
+				F43D42631B51D9C500C68261 /* Localized.strings */,
+				F4672AB21B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib */,
+				F49F65D51B4C87B20099BF2B /* images */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		F49F65B81B4C858A0099BF2B = {
+			isa = PBXGroup;
+			children = (
+				F4672AA61B4DCD9300664E05 /* refafactor.xcodeproj */,
+				F49F65C41B4C858A0099BF2B /* Euphoria */,
+				F49F65C31B4C858A0099BF2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F49F65C31B4C858A0099BF2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49F65C21B4C858A0099BF2B /* Euphoria.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49F65C41B4C858A0099BF2B /* Euphoria */ = {
+			isa = PBXGroup;
+			children = (
+				F49F65D11B4C85CF0099BF2B /* rsscommon */,
+				F49F65D41B4C87A40099BF2B /* GPL */,
+				F49F65D71B4C88930099BF2B /* RSSEuphoriaSettings.h */,
+				F49F65D81B4C88930099BF2B /* RSSEuphoriaSettings.m */,
+				F49F65C71B4C858A0099BF2B /* RSSEuphoriaView.h */,
+				F49F65C91B4C858A0099BF2B /* RSSEuphoriaView.mm */,
+				F4672AAF1B4DCE0600664E05 /* Configuration */,
+				F49F65C51B4C858A0099BF2B /* Supporting Files */,
+			);
+			path = Euphoria;
+			sourceTree = "<group>";
+		};
+		F49F65C51B4C858A0099BF2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49F65C61B4C858A0099BF2B /* Info.plist */,
+				F4DC04561B52C871007E647E /* images */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F49F65D11B4C85CF0099BF2B /* rsscommon */ = {
+			isa = PBXGroup;
+			children = (
+				F4672A851B4DCD3D00664E05 /* RSSSettings.h */,
+				F4672A861B4DCD3D00664E05 /* RSSSettings.m */,
+				F4672A8A1B4DCD3D00664E05 /* RSSWindow.h */,
+				F4672A8B1B4DCD3D00664E05 /* RSSWindow.m */,
+				F4672A881B4DCD3D00664E05 /* RSSUserDefaults+Constants.h */,
+				F4672A891B4DCD3D00664E05 /* RSSUserDefaults+Constants.m */,
+				F4672A7F1B4DCD3D00664E05 /* RSSConfigurationWindowController.h */,
+				F4672A801B4DCD3D00664E05 /* RSSConfigurationWindowController.m */,
+				F4672A761B4DCD3D00664E05 /* RSSAboutBoxWindowController.h */,
+				F4672A771B4DCD3D00664E05 /* RSSAboutBoxWindowController.m */,
+				F4672A811B4DCD3D00664E05 /* RSSLightGrayBackgroundView.h */,
+				F4672A821B4DCD3D00664E05 /* RSSLightGrayBackgroundView.m */,
+				F4672A831B4DCD3D00664E05 /* RSSSecondaryBox.h */,
+				F4672A841B4DCD3D00664E05 /* RSSSecondaryBox.m */,
+				F4672A791B4DCD3D00664E05 /* RSSCollectionView.h */,
+				F4672A7A1B4DCD3D00664E05 /* RSSCollectionView.m */,
+				F4672A7B1B4DCD3D00664E05 /* RSSCollectionViewItem.h */,
+				F4672A7C1B4DCD3D00664E05 /* RSSCollectionViewItem.m */,
+				F4672A7D1B4DCD3D00664E05 /* RSSCollectionViewItemLabel.h */,
+				F4672A7E1B4DCD3D00664E05 /* RSSCollectionViewItemLabel.m */,
+				F4B6DC4F1B4F482D0050A936 /* GPL */,
+				F49F65D21B4C85DA0099BF2B /* CommonCreatives */,
+				F49F65D31B4C87990099BF2B /* Resources */,
+			);
+			name = rsscommon;
+			sourceTree = "<group>";
+		};
+		F49F65D21B4C85DA0099BF2B /* CommonCreatives */ = {
+			isa = PBXGroup;
+			children = (
+				F4672A6E1B4DCD2400664E05 /* custom_thumbnail.png */,
+				F4672A6F1B4DCD2400664E05 /* custom_thumbnail@2x.png */,
+				F4672A701B4DCD2400664E05 /* random_thumbnail.png */,
+				F4672A711B4DCD2400664E05 /* random_thumbnail@2x.png */,
+			);
+			name = CommonCreatives;
+			sourceTree = "<group>";
+		};
+		F49F65D31B4C87990099BF2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4672A871B4DCD3D00664E05 /* RSSStandardSettingsView.xib */,
+				F4672A781B4DCD3D00664E05 /* RSSAboutBoxWindowController.xib */,
+				F4672AA31B4DCD8000664E05 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F49F65D41B4C87A40099BF2B /* GPL */ = {
+			isa = PBXGroup;
+			children = (
+				F4672AB81B4DCF5D00664E05 /* Euphoria.h */,
+				F4672AB71B4DCF5D00664E05 /* Euphoria.cpp */,
+				F4672ABA1B4DCF5D00664E05 /* texture.h */,
+			);
+			name = GPL;
+			sourceTree = "<group>";
+		};
+		F49F65D51B4C87B20099BF2B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F4E4B75E1B51C44D00C3C908 /* regular_thumbnail.png */,
+				F4E4B75F1B51C44D00C3C908 /* regular_thumbnail@2x.png */,
+				F4E4B7621B51C4E300C3C908 /* grid_thumbnail.png */,
+				F4E4B7631B51C4E300C3C908 /* grid_thumbnail@2x.png */,
+				F458950D1B51E3F0007CB60A /* cubism_thumbnail.png */,
+				F458950E1B51E3F0007CB60A /* cubism_thumbnail@2x.png */,
+				F45895111B51E41E007CB60A /* badmath_thumbnail.png */,
+				F45895121B51E41E007CB60A /* badmath_thumbnail@2x.png */,
+				F4DA56941B5293360062C1FA /* mtheory_thumbnail.png */,
+				F4DA56951B5293360062C1FA /* mtheory_thumbnail@2x.png */,
+				F4DA56981B5293430062C1FA /* uhftem_thumbnail.png */,
+				F4DA56991B5293430062C1FA /* uhftem_thumbnail@2x.png */,
+				F43D425E1B51D99200C68261 /* nowhere_thumbnail.png */,
+				F43D425F1B51D99200C68261 /* nowhere_thumbnail@2x.png */,
+				F43D42651B51DA9600C68261 /* echo_thumbnail.png */,
+				F43D42661B51DA9600C68261 /* echo_thumbnail@2x.png */,
+				F43D42691B51DB5600C68261 /* kaleidoscope_thumbnail.png */,
+				F43D426A1B51DB5600C68261 /* kaleidoscope_thumbnail@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		F4B6DC4F1B4F482D0050A936 /* GPL */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6DC611B4F48690050A936 /* rgbhsl */,
+				F4B6DC501B4F48480050A936 /* rsMath */,
+			);
+			name = GPL;
+			sourceTree = "<group>";
+		};
+		F4B6DC501B4F48480050A936 /* rsMath */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6DC511B4F48530050A936 /* rsMath.h */,
+				F4B6DC521B4F48530050A936 /* rsMatrix.cpp */,
+				F4B6DC531B4F48530050A936 /* rsMatrix.h */,
+				F4B6DC541B4F48530050A936 /* rsQuat.cpp */,
+				F4B6DC551B4F48530050A936 /* rsQuat.h */,
+				F4B6DC561B4F48530050A936 /* rsTrigonometry.h */,
+				F4B6DC581B4F48530050A936 /* rsVec.h */,
+				F4B6DC571B4F48530050A936 /* rsVec.cpp */,
+			);
+			name = rsMath;
+			sourceTree = "<group>";
+		};
+		F4B6DC611B4F48690050A936 /* rgbhsl */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6DC631B4F48750050A936 /* Rgbhsl.h */,
+				F4B6DC621B4F48750050A936 /* Rgbhsl.cpp */,
+			);
+			name = rgbhsl;
+			sourceTree = "<group>";
+		};
+		F4DC04561B52C871007E647E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC04571B52C881007E647E /* thumbnail.png */,
+				F4DC04581B52C881007E647E /* thumbnail@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F49F65BF1B4C858A0099BF2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4672ABE1B4DCF5D00664E05 /* texture.h in Headers */,
+				F4672A971B4DCD3D00664E05 /* RSSLightGrayBackgroundView.h in Headers */,
+				F4B6DC5D1B4F48530050A936 /* rsQuat.h in Headers */,
+				F4672A8F1B4DCD3D00664E05 /* RSSCollectionView.h in Headers */,
+				F49F65C81B4C858A0099BF2B /* RSSEuphoriaView.h in Headers */,
+				F4B6DC5B1B4F48530050A936 /* rsMatrix.h in Headers */,
+				F4672A931B4DCD3D00664E05 /* RSSCollectionViewItemLabel.h in Headers */,
+				F4672AB31B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h in Headers */,
+				F4B6DC601B4F48530050A936 /* rsVec.h in Headers */,
+				F4672ABC1B4DCF5D00664E05 /* Euphoria.h in Headers */,
+				F49F65D91B4C88930099BF2B /* RSSEuphoriaSettings.h in Headers */,
+				F4B6DC651B4F48750050A936 /* Rgbhsl.h in Headers */,
+				F4672A951B4DCD3D00664E05 /* RSSConfigurationWindowController.h in Headers */,
+				F4672A991B4DCD3D00664E05 /* RSSSecondaryBox.h in Headers */,
+				F4672A9E1B4DCD3D00664E05 /* RSSUserDefaults+Constants.h in Headers */,
+				F4672A911B4DCD3D00664E05 /* RSSCollectionViewItem.h in Headers */,
+				F4B6DC5E1B4F48530050A936 /* rsTrigonometry.h in Headers */,
+				F4672AA01B4DCD3D00664E05 /* RSSWindow.h in Headers */,
+				F4B6DC591B4F48530050A936 /* rsMath.h in Headers */,
+				F4672A9B1B4DCD3D00664E05 /* RSSSettings.h in Headers */,
+				F4672A8C1B4DCD3D00664E05 /* RSSAboutBoxWindowController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F49F65C11B4C858A0099BF2B /* Euphoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49F65CD1B4C858A0099BF2B /* Build configuration list for PBXNativeTarget "Euphoria" */;
+			buildPhases = (
+				F49F65BD1B4C858A0099BF2B /* Sources */,
+				F49F65BE1B4C858A0099BF2B /* Frameworks */,
+				F49F65BF1B4C858A0099BF2B /* Headers */,
+				F49F65C01B4C858A0099BF2B /* Resources */,
+				F49F65D61B4C87D10099BF2B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4672AAD1B4DCD9A00664E05 /* PBXTargetDependency */,
+			);
+			name = Euphoria;
+			productName = Euphoria;
+			productReference = F49F65C21B4C858A0099BF2B /* Euphoria.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F49F65B91B4C858A0099BF2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					F49F65C11B4C858A0099BF2B = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = F49F65BC1B4C858A0099BF2B /* Build configuration list for PBXProject "Euphoria" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F49F65B81B4C858A0099BF2B;
+			productRefGroup = F49F65C31B4C858A0099BF2B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F4672AA71B4DCD9300664E05 /* Products */;
+					ProjectRef = F4672AA61B4DCD9300664E05 /* refafactor.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F49F65C11B4C858A0099BF2B /* Euphoria */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F4672AAB1B4DCD9300664E05 /* refafactor */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = refafactor;
+			remoteRef = F4672AAA1B4DCD9300664E05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F49F65C01B4C858A0099BF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E4B7641B51C4E300C3C908 /* grid_thumbnail.png in Resources */,
+				F4672A751B4DCD2400664E05 /* random_thumbnail@2x.png in Resources */,
+				F43D42611B51D99200C68261 /* nowhere_thumbnail@2x.png in Resources */,
+				F4DA56961B5293360062C1FA /* mtheory_thumbnail.png in Resources */,
+				F43D426C1B51DB5600C68261 /* kaleidoscope_thumbnail@2x.png in Resources */,
+				F4672A731B4DCD2400664E05 /* custom_thumbnail@2x.png in Resources */,
+				F4E4B7651B51C4E300C3C908 /* grid_thumbnail@2x.png in Resources */,
+				F45895141B51E41E007CB60A /* badmath_thumbnail@2x.png in Resources */,
+				F43D426B1B51DB5600C68261 /* kaleidoscope_thumbnail.png in Resources */,
+				F45895101B51E3F0007CB60A /* cubism_thumbnail@2x.png in Resources */,
+				F4DA56971B5293360062C1FA /* mtheory_thumbnail@2x.png in Resources */,
+				F4672A8E1B4DCD3D00664E05 /* RSSAboutBoxWindowController.xib in Resources */,
+				F4672AA51B4DCD8000664E05 /* Localizable.strings in Resources */,
+				F4DA569B1B5293430062C1FA /* uhftem_thumbnail@2x.png in Resources */,
+				F45895131B51E41E007CB60A /* badmath_thumbnail.png in Resources */,
+				F43D42671B51DA9600C68261 /* echo_thumbnail.png in Resources */,
+				F4E4B7611B51C44D00C3C908 /* regular_thumbnail@2x.png in Resources */,
+				F43D42601B51D99200C68261 /* nowhere_thumbnail.png in Resources */,
+				F4672A721B4DCD2400664E05 /* custom_thumbnail.png in Resources */,
+				F4DC045A1B52C881007E647E /* thumbnail@2x.png in Resources */,
+				F458950F1B51E3F0007CB60A /* cubism_thumbnail.png in Resources */,
+				F4DC04591B52C881007E647E /* thumbnail.png in Resources */,
+				F4DA569A1B5293430062C1FA /* uhftem_thumbnail.png in Resources */,
+				F4672A741B4DCD2400664E05 /* random_thumbnail.png in Resources */,
+				F43D42681B51DA9600C68261 /* echo_thumbnail@2x.png in Resources */,
+				F4E4B7601B51C44D00C3C908 /* regular_thumbnail.png in Resources */,
+				F43D42641B51D9C500C68261 /* Localized.strings in Resources */,
+				F4672AB51B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib in Resources */,
+				F4672A9D1B4DCD3D00664E05 /* RSSStandardSettingsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F49F65D61B4C87D10099BF2B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Refactor the rsscommon class to avoid warning or issues when multiple RSS screen savers are installed.\n\n\"${TARGET_BUILD_DIR}\"/refafactor --bundle \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" --prefix EUP\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49F65BD1B4C858A0099BF2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4672A9A1B4DCD3D00664E05 /* RSSSecondaryBox.m in Sources */,
+				F49F65DA1B4C88930099BF2B /* RSSEuphoriaSettings.m in Sources */,
+				F4672A961B4DCD3D00664E05 /* RSSConfigurationWindowController.m in Sources */,
+				F4672A9F1B4DCD3D00664E05 /* RSSUserDefaults+Constants.m in Sources */,
+				F4B6DC5A1B4F48530050A936 /* rsMatrix.cpp in Sources */,
+				F4672A9C1B4DCD3D00664E05 /* RSSSettings.m in Sources */,
+				F4672A901B4DCD3D00664E05 /* RSSCollectionView.m in Sources */,
+				F4672AA11B4DCD3D00664E05 /* RSSWindow.m in Sources */,
+				F4672AB41B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m in Sources */,
+				F4672ABB1B4DCF5D00664E05 /* Euphoria.cpp in Sources */,
+				F49F65CA1B4C858A0099BF2B /* RSSEuphoriaView.mm in Sources */,
+				F4B6DC5C1B4F48530050A936 /* rsQuat.cpp in Sources */,
+				F4672A941B4DCD3D00664E05 /* RSSCollectionViewItemLabel.m in Sources */,
+				F4B6DC641B4F48750050A936 /* Rgbhsl.cpp in Sources */,
+				F4672A981B4DCD3D00664E05 /* RSSLightGrayBackgroundView.m in Sources */,
+				F4B6DC5F1B4F48530050A936 /* rsVec.cpp in Sources */,
+				F4672A921B4DCD3D00664E05 /* RSSCollectionViewItem.m in Sources */,
+				F4672A8D1B4DCD3D00664E05 /* RSSAboutBoxWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4672AAD1B4DCD9A00664E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = refafactor;
+			targetProxy = F4672AAC1B4DCD9A00664E05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4672AA31B4DCD8000664E05 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4672AA41B4DCD8000664E05 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F49F65CB1B4C858A0099BF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F49F65CC1B4C858A0099BF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F49F65CE1B4C858A0099BF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F49F65CF1B4C858A0099BF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49F65BC1B4C858A0099BF2B /* Build configuration list for PBXProject "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49F65CB1B4C858A0099BF2B /* Debug */,
+				F49F65CC1B4C858A0099BF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49F65CD1B4C858A0099BF2B /* Build configuration list for PBXNativeTarget "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49F65CE1B4C858A0099BF2B /* Debug */,
+				F49F65CF1B4C858A0099BF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F49F65B91B4C858A0099BF2B /* Project object */;
+}
