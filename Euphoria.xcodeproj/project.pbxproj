@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F43D42601B51D99200C68261 /* nowhere_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D425E1B51D99200C68261 /* nowhere_thumbnail.png */; };
 		F43D42611B51D99200C68261 /* nowhere_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D425F1B51D99200C68261 /* nowhere_thumbnail@2x.png */; };
-		F43D42641B51D9C500C68261 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = F43D42631B51D9C500C68261 /* Localized.strings */; };
 		F43D42671B51DA9600C68261 /* echo_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D42651B51DA9600C68261 /* echo_thumbnail.png */; };
 		F43D42681B51DA9600C68261 /* echo_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D42661B51DA9600C68261 /* echo_thumbnail@2x.png */; };
 		F43D426B1B51DB5600C68261 /* kaleidoscope_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F43D42691B51DB5600C68261 /* kaleidoscope_thumbnail.png */; };
@@ -47,10 +46,11 @@
 		F4672AA51B4DCD8000664E05 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4672AA31B4DCD8000664E05 /* Localizable.strings */; };
 		F4672AB31B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672AB01B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h */; };
 		F4672AB41B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4672AB11B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m */; };
-		F4672AB51B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4672AB21B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib */; };
 		F4672ABB1B4DCF5D00664E05 /* Euphoria.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4672AB71B4DCF5D00664E05 /* Euphoria.cpp */; };
 		F4672ABC1B4DCF5D00664E05 /* Euphoria.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672AB81B4DCF5D00664E05 /* Euphoria.h */; };
 		F4672ABE1B4DCF5D00664E05 /* texture.h in Headers */ = {isa = PBXBuildFile; fileRef = F4672ABA1B4DCF5D00664E05 /* texture.h */; };
+		F48B40391B52E95500A10A8A /* RSSEuphoriaConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B403B1B52E95500A10A8A /* RSSEuphoriaConfigurationWindowController.xib */; };
+		F48B403C1B52E95B00A10A8A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48B403E1B52E95B00A10A8A /* Localized.strings */; };
 		F49F65C81B4C858A0099BF2B /* RSSEuphoriaView.h in Headers */ = {isa = PBXBuildFile; fileRef = F49F65C71B4C858A0099BF2B /* RSSEuphoriaView.h */; };
 		F49F65CA1B4C858A0099BF2B /* RSSEuphoriaView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F49F65C91B4C858A0099BF2B /* RSSEuphoriaView.mm */; };
 		F49F65D91B4C88930099BF2B /* RSSEuphoriaSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F49F65D71B4C88930099BF2B /* RSSEuphoriaSettings.h */; };
@@ -97,7 +97,6 @@
 /* Begin PBXFileReference section */
 		F43D425E1B51D99200C68261 /* nowhere_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nowhere_thumbnail.png; path = images/nowhere_thumbnail.png; sourceTree = "<group>"; };
 		F43D425F1B51D99200C68261 /* nowhere_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nowhere_thumbnail@2x.png"; path = "images/nowhere_thumbnail@2x.png"; sourceTree = "<group>"; };
-		F43D42631B51D9C500C68261 /* Localized.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
 		F43D42651B51DA9600C68261 /* echo_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = echo_thumbnail.png; path = images/echo_thumbnail.png; sourceTree = "<group>"; };
 		F43D42661B51DA9600C68261 /* echo_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "echo_thumbnail@2x.png"; path = "images/echo_thumbnail@2x.png"; sourceTree = "<group>"; };
 		F43D42691B51DB5600C68261 /* kaleidoscope_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kaleidoscope_thumbnail.png; path = images/kaleidoscope_thumbnail.png; sourceTree = "<group>"; };
@@ -136,10 +135,14 @@
 		F4672AA61B4DCD9300664E05 /* refafactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = refafactor.xcodeproj; path = Euphoria/rsscommon/refafactor/refafactor.xcodeproj; sourceTree = "<group>"; };
 		F4672AB01B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEuphoriaConfigurationWindowController.h; sourceTree = "<group>"; };
 		F4672AB11B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEuphoriaConfigurationWindowController.m; sourceTree = "<group>"; };
-		F4672AB21B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4672AB71B4DCF5D00664E05 /* Euphoria.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Euphoria.cpp; path = GPL/Euphoria.cpp; sourceTree = "<group>"; };
 		F4672AB81B4DCF5D00664E05 /* Euphoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euphoria.h; path = GPL/Euphoria.h; sourceTree = "<group>"; };
 		F4672ABA1B4DCF5D00664E05 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = GPL/texture.h; sourceTree = "<group>"; };
+		F48B403A1B52E95500A10A8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F48B403D1B52E95B00A10A8A /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
+		F48B403F1B52E96900A10A8A /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localized.strings; sourceTree = "<group>"; };
+		F48B40401B52E96A00A10A8A /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F48B40411B52E97A00A10A8A /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = rsscommon/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F49F65C21B4C858A0099BF2B /* Euphoria.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Euphoria.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49F65C61B4C858A0099BF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49F65C71B4C858A0099BF2B /* RSSEuphoriaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSEuphoriaView.h; sourceTree = "<group>"; };
@@ -192,8 +195,8 @@
 			children = (
 				F4672AB01B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.h */,
 				F4672AB11B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.m */,
-				F43D42631B51D9C500C68261 /* Localized.strings */,
-				F4672AB21B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib */,
+				F48B403E1B52E95B00A10A8A /* Localized.strings */,
+				F48B403B1B52E95500A10A8A /* RSSEuphoriaConfigurationWindowController.xib */,
 				F49F65D51B4C87B20099BF2B /* images */,
 			);
 			name = Configuration;
@@ -441,6 +444,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = F49F65B81B4C858A0099BF2B;
 			productRefGroup = F49F65C31B4C858A0099BF2B /* Products */;
@@ -499,8 +503,8 @@
 				F4672A741B4DCD2400664E05 /* random_thumbnail.png in Resources */,
 				F43D42681B51DA9600C68261 /* echo_thumbnail@2x.png in Resources */,
 				F4E4B7601B51C44D00C3C908 /* regular_thumbnail.png in Resources */,
-				F43D42641B51D9C500C68261 /* Localized.strings in Resources */,
-				F4672AB51B4DCE2B00664E05 /* RSSEuphoriaConfigurationWindowController.xib in Resources */,
+				F48B403C1B52E95B00A10A8A /* Localized.strings in Resources */,
+				F48B40391B52E95500A10A8A /* RSSEuphoriaConfigurationWindowController.xib in Resources */,
 				F4672A9D1B4DCD3D00664E05 /* RSSStandardSettingsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,8 +568,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				F4672AA41B4DCD8000664E05 /* en */,
+				F48B40411B52E97A00A10A8A /* fr */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F48B403B1B52E95500A10A8A /* RSSEuphoriaConfigurationWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48B403A1B52E95500A10A8A /* en */,
+				F48B40401B52E96A00A10A8A /* fr */,
+			);
+			name = RSSEuphoriaConfigurationWindowController.xib;
+			sourceTree = "<group>";
+		};
+		F48B403E1B52E95B00A10A8A /* Localized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48B403D1B52E95B00A10A8A /* en */,
+				F48B403F1B52E96900A10A8A /* fr */,
+			);
+			name = Localized.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

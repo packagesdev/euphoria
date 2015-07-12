@@ -98,12 +98,12 @@
 									   @{
 										   RSSCollectionViewRepresentedObjectThumbnail : @"badmath_thumbnail",
 										   RSSCollectionViewRepresentedObjectTag : @(RSSEuphoriaSetBadMath),
-										   RSSCollectionViewRepresentedObjectName : NSLocalizedStringFromTableInBundle(@"Bad math",@"Localized",tBundle,@"")
+										   RSSCollectionViewRepresentedObjectName : NSLocalizedStringFromTableInBundle(@"Bad Math",@"Localized",tBundle,@"")
 										   },
 									   @{
 										   RSSCollectionViewRepresentedObjectThumbnail : @"mtheory_thumbnail",
 										   RSSCollectionViewRepresentedObjectTag : @(RSSEuphoriaSetMTheory),
-										   RSSCollectionViewRepresentedObjectName : NSLocalizedStringFromTableInBundle(@"M-theory",@"Localized",tBundle,@"")
+										   RSSCollectionViewRepresentedObjectName : NSLocalizedStringFromTableInBundle(@"M-Theory",@"Localized",tBundle,@"")
 										   },
 									   @{
 										   RSSCollectionViewRepresentedObjectThumbnail : @"uhftem_thumbnail",

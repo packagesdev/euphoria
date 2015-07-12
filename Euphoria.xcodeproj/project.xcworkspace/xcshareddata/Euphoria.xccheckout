@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1B908474-F624-46DF-AC18-B033C9092348</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Euphoria</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>51F150AFDC369B79AFC620C0E9E34ADCDECB9665</key>
+		<string>https://github.com/packagesdev/rsscommon</string>
+		<key>FB7FBAF09BB94089755F9E5DEFDC72B3FDABEC28</key>
+		<string>https://github.com/packagesdev/euphoria.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Euphoria.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>51F150AFDC369B79AFC620C0E9E34ADCDECB9665</key>
+		<string>../..Euphoria/rsscommon/</string>
+		<key>FB7FBAF09BB94089755F9E5DEFDC72B3FDABEC28</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/packagesdev/euphoria.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FB7FBAF09BB94089755F9E5DEFDC72B3FDABEC28</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FB7FBAF09BB94089755F9E5DEFDC72B3FDABEC28</string>
+			<key>IDESourceControlWCCName</key>
+			<string>euphoria</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51F150AFDC369B79AFC620C0E9E34ADCDECB9665</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rsscommon</string>
+		</dict>
+	</array>
+</dict>
+</plist>
