@@ -122,9 +122,9 @@ DQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" id="mlQ-55-SkJ">
-                                <rect key="frame" x="93" y="44" width="153" height="17"/>
+                                <rect key="frame" x="111" y="44" width="135" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Nombre de trainées :" id="TZN-8E-a29">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Nombre de brins :" id="TZN-8E-a29">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
