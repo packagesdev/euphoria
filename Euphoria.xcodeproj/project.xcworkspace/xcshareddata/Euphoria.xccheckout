@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>51F150AFDC369B79AFC620C0E9E34ADCDECB9665</key>
-		<string>../..Euphoria/rsscommon/</string>
+		<string>../..Euphoria/rsscommon</string>
 		<key>FB7FBAF09BB94089755F9E5DEFDC72B3FDABEC28</key>
 		<string>../..</string>
 	</dict>

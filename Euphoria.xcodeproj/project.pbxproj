@@ -169,6 +169,9 @@
 		F4E4B75F1B51C44D00C3C908 /* regular_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "regular_thumbnail@2x.png"; path = "images/regular_thumbnail@2x.png"; sourceTree = "<group>"; };
 		F4E4B7621B51C4E300C3C908 /* grid_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid_thumbnail.png; path = images/grid_thumbnail.png; sourceTree = "<group>"; };
 		F4E4B7631B51C4E300C3C908 /* grid_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grid_thumbnail@2x.png"; path = "images/grid_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4FE0AB81B5310DA002F43F7 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localized.strings; sourceTree = "<group>"; };
+		F4FE0AB91B5310DA002F43F7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4FE0ABA1B5310EB002F43F7 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = rsscommon/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +448,7 @@
 			knownRegions = (
 				en,
 				fr,
+				de,
 			);
 			mainGroup = F49F65B81B4C858A0099BF2B;
 			productRefGroup = F49F65C31B4C858A0099BF2B /* Products */;
@@ -569,6 +573,7 @@
 			children = (
 				F4672AA41B4DCD8000664E05 /* en */,
 				F48B40411B52E97A00A10A8A /* fr */,
+				F4FE0ABA1B5310EB002F43F7 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -578,6 +583,7 @@
 			children = (
 				F48B403A1B52E95500A10A8A /* en */,
 				F48B40401B52E96A00A10A8A /* fr */,
+				F4FE0AB91B5310DA002F43F7 /* de */,
 			);
 			name = RSSEuphoriaConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -587,6 +593,7 @@
 			children = (
 				F48B403D1B52E95B00A10A8A /* en */,
 				F48B403F1B52E96900A10A8A /* fr */,
+				F4FE0AB81B5310DA002F43F7 /* de */,
 			);
 			name = Localized.strings;
 			sourceTree = "<group>";
