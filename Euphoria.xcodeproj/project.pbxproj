@@ -105,6 +105,9 @@
 		F458950E1B51E3F0007CB60A /* cubism_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cubism_thumbnail@2x.png"; path = "images/cubism_thumbnail@2x.png"; sourceTree = "<group>"; };
 		F45895111B51E41E007CB60A /* badmath_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = badmath_thumbnail.png; path = images/badmath_thumbnail.png; sourceTree = "<group>"; };
 		F45895121B51E41E007CB60A /* badmath_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badmath_thumbnail@2x.png"; path = "images/badmath_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4612A9A1B53192800CC438A /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localized.strings; sourceTree = "<group>"; };
+		F4612A9B1B53192800CC438A /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4612A9C1B53193700CC438A /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = rsscommon/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4672A6E1B4DCD2400664E05 /* custom_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_thumbnail.png; path = rsscommon/CreativeCommons/custom_thumbnail.png; sourceTree = "<group>"; };
 		F4672A6F1B4DCD2400664E05 /* custom_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "custom_thumbnail@2x.png"; path = "rsscommon/CreativeCommons/custom_thumbnail@2x.png"; sourceTree = "<group>"; };
 		F4672A701B4DCD2400664E05 /* random_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = random_thumbnail.png; path = rsscommon/CreativeCommons/random_thumbnail.png; sourceTree = "<group>"; };
@@ -169,6 +172,9 @@
 		F4E4B75F1B51C44D00C3C908 /* regular_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "regular_thumbnail@2x.png"; path = "images/regular_thumbnail@2x.png"; sourceTree = "<group>"; };
 		F4E4B7621B51C4E300C3C908 /* grid_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid_thumbnail.png; path = images/grid_thumbnail.png; sourceTree = "<group>"; };
 		F4E4B7631B51C4E300C3C908 /* grid_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grid_thumbnail@2x.png"; path = "images/grid_thumbnail@2x.png"; sourceTree = "<group>"; };
+		F4E6C3681B53B50A0044C3E6 /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localized.strings; sourceTree = "<group>"; };
+		F4E6C3691B53B50A0044C3E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4E6C36A1B53B5140044C3E6 /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = rsscommon/ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4FE0AB81B5310DA002F43F7 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localized.strings; sourceTree = "<group>"; };
 		F4FE0AB91B5310DA002F43F7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F4FE0ABA1B5310EB002F43F7 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = rsscommon/de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -449,6 +455,8 @@
 				en,
 				fr,
 				de,
+				es,
+				ja,
 			);
 			mainGroup = F49F65B81B4C858A0099BF2B;
 			productRefGroup = F49F65C31B4C858A0099BF2B /* Products */;
@@ -574,6 +582,8 @@
 				F4672AA41B4DCD8000664E05 /* en */,
 				F48B40411B52E97A00A10A8A /* fr */,
 				F4FE0ABA1B5310EB002F43F7 /* de */,
+				F4612A9C1B53193700CC438A /* es */,
+				F4E6C36A1B53B5140044C3E6 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -584,6 +594,8 @@
 				F48B403A1B52E95500A10A8A /* en */,
 				F48B40401B52E96A00A10A8A /* fr */,
 				F4FE0AB91B5310DA002F43F7 /* de */,
+				F4612A9B1B53192800CC438A /* es */,
+				F4E6C3691B53B50A0044C3E6 /* ja */,
 			);
 			name = RSSEuphoriaConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -594,6 +606,8 @@
 				F48B403D1B52E95B00A10A8A /* en */,
 				F48B403F1B52E96900A10A8A /* fr */,
 				F4FE0AB81B5310DA002F43F7 /* de */,
+				F4612A9A1B53192800CC438A /* es */,
+				F4E6C3681B53B50A0044C3E6 /* ja */,
 			);
 			name = Localized.strings;
 			sourceTree = "<group>";
