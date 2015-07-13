@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7525" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7525"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RSSEuphoriaConfigurationWindowController">
+            <connections>
+                <outlet property="_feedbackLabel" destination="lsk-Ak-1ij" id="Ihd-nL-xmu"/>
+                <outlet property="_feedbackSlider" destination="Jkn-Yj-mOs" id="TBC-h5-Jc7"/>
+                <outlet property="_feedbackSpeedLabel" destination="xlB-fg-5k7" id="Pfn-yx-M6c"/>
+                <outlet property="_feedbackSpeedSlider" destination="KX0-UK-HlK" id="XFh-Ge-H4Y"/>
+                <outlet property="_feedbackTextureSizeLabel" destination="chA-j8-bXM" id="slB-oI-i50"/>
+                <outlet property="_feedbackTextureSizeSlider" destination="Cxm-Wc-AtE" id="FdV-e6-A2K"/>
+                <outlet property="_meshDensityLabel" destination="dIg-mX-AO9" id="Wyz-wv-6gi"/>
+                <outlet property="_meshDensitySlider" destination="GOR-tx-6I6" id="HqG-qw-oyF"/>
+                <outlet property="_numberOfBackgroundLayersLabel" destination="Rcd-er-Cgo" id="IAe-pN-Ip7"/>
+                <outlet property="_numberOfBackgroundLayersSlider" destination="FLH-br-HIk" id="c0R-iF-lPh"/>
+                <outlet property="_numberOfWispsLabel" destination="bYq-BM-XzX" id="6px-qW-aMP"/>
+                <outlet property="_numberOfWispsSlider" destination="ZBP-JK-lTR" id="leF-uZ-Qpf"/>
+                <outlet property="_settingsCollectionView" destination="WP9-Pv-SFo" id="TPW-1s-csl"/>
+                <outlet property="_speedLabel" destination="nyv-Ea-10w" id="1fK-hz-haz"/>
+                <outlet property="_speedSlider" destination="tMp-W6-wQ5" id="2ZR-vT-oGj"/>
+                <outlet property="_textureTypePopupButton" destination="Qf6-PY-9U0" id="e0y-Kg-RRm"/>
+                <outlet property="_visibilityLabel" destination="cuD-66-kUE" id="DRt-k5-u4I"/>
+                <outlet property="_visibilitySlider" destination="7mS-HM-qQz" id="WEc-wJ-Piz"/>
+                <outlet property="_wireframeCheckbox" destination="T7f-M7-uTT" id="LbW-Hb-xgV"/>
+                <outlet property="cancelButton" destination="Iky-dP-vFd" id="epZ-9f-c8z"/>
+                <outlet property="mainScreenCheckBox" destination="bUF-P1-R1Z" id="uJG-9m-79A"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5" customClass="RSSWindow">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="526" height="571"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="5" width="526" height="571"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <userGuides>
+                    <userLayoutGuide location="263" affinity="minX"/>
+                </userGuides>
+                <subviews>
+                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" id="ntX-hI-JuK">
+                        <rect key="frame" x="-1" y="456" width="528" height="115"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" id="3ju-3b-cGS">
+                            <rect key="frame" x="0.0" y="0.0" width="527" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <collectionView selectable="YES" maxNumberOfRows="1" id="WP9-Pv-SFo" customClass="RSSCollectionView">
+                                    <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-2" id="ywc-3I-Wpv"/>
+                                        <outlet property="itemPrototype" destination="hwS-6m-ZCq" id="zjr-DJ-d2i"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="S0l-a2-17A">
+                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="8GC-ZP-ncY">
+                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <customView id="VY8-qp-Nmt" customClass="RSSSecondaryBox">
+                        <rect key="frame" x="-1" y="61" width="527" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <button id="bUF-P1-R1Z">
+                                <rect key="frame" x="263" y="14" width="179" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Endast huvudbildskärm" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IiK-Pb-HaW">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField verticalHuggingPriority="750" id="uPL-Fr-afe">
+                                <rect key="frame" x="157" y="15" width="101" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Bildskärmar:" id="cnc-Jl-FQ6">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <button verticalHuggingPriority="750" id="EUb-me-ckb">
+                        <rect key="frame" x="22" y="13" width="76" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Om…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1Qk-0W-Khv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showAboutBox:" target="-2" id="hCU-qb-gLC"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="1" id="dEL-u3-pVU">
+                        <rect key="frame" x="428" y="13" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="USD-iA-QwJ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeDialog:" target="-2" id="UHM-wz-E1n"/>
+                        </connections>
+                    </button>
+                    <customView id="FtY-u8-6nE" customClass="RSSLightGrayBackgroundView">
+                        <rect key="frame" x="0.0" y="375" width="527" height="82"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" id="mlQ-55-SkJ">
+                                <rect key="frame" x="162" y="45" width="96" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Antal grenar:" id="TZN-8E-a29">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="pTI-hc-bW8">
+                                <rect key="frame" x="99" y="20" width="159" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Antal bakgrundslager:" id="APr-yB-BPR">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" id="ZBP-JK-lTR">
+                                <rect key="frame" x="263" y="42" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="0sz-Ke-z02">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setNumberOfWisps:" target="-2" id="tvj-0I-IKF"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="bYq-BM-XzX">
+                                <rect key="frame" x="396" y="44" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="6CX-Ga-EXS">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" id="FLH-br-HIk">
+                                <rect key="frame" x="263" y="17" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="8cf-Ka-kaY">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setNumberOfBackgroundLayers:" target="-2" id="XnA-YW-FEI"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Rcd-er-Cgo">
+                                <rect key="frame" x="396" y="19" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="laH-4g-cuO">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <customView id="zls-Dh-cWm" customClass="RSSSecondaryBox">
+                        <rect key="frame" x="0.0" y="269" width="527" height="107"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" id="XWT-Uy-Ru8">
+                                <rect key="frame" x="175" y="70" width="83" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Nättäthet:" id="8ee-dW-xjh">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="UhE-ZS-GAa">
+                                <rect key="frame" x="175" y="45" width="83" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Synlighet:" id="iti-Su-axb">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="KZP-ck-eFO">
+                                <rect key="frame" x="175" y="20" width="83" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Hastighet:" id="FOo-y4-v6B">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" id="GOR-tx-6I6">
+                                <rect key="frame" x="263" y="67" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" minValue="2" maxValue="100" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="9dj-bE-AXj">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setMeshDensity:" target="-2" id="3QW-0P-Nf3"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="dIg-mX-AO9">
+                                <rect key="frame" x="396" y="69" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="89i-ke-ZXQ">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" id="tMp-W6-wQ5">
+                                <rect key="frame" x="263" y="17" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="100" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="Zit-kz-F29">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setSpeed:" target="-2" id="ls9-sa-m76"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="nyv-Ea-10w">
+                                <rect key="frame" x="396" y="19" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="aNQ-CP-s3a">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" id="7mS-HM-qQz">
+                                <rect key="frame" x="263" y="42" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="100" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="HPc-ap-fxP">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setVisibility:" target="-2" id="NQS-r1-lXu"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="cuD-66-kUE">
+                                <rect key="frame" x="396" y="44" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="NjE-fL-h1H">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <customView id="5UH-Y6-Qgr" customClass="RSSLightGrayBackgroundView">
+                        <rect key="frame" x="0.0" y="108" width="527" height="162"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" id="0na-XZ-YCg">
+                                <rect key="frame" x="107" y="100" width="151" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Feedback-hastighet:" id="8J3-s7-MrG">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="f4b-lV-cCG">
+                                <rect key="frame" x="174" y="125" width="84" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Feedback:" id="Xge-BE-8Mw">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="NPx-lj-MUK">
+                                <rect key="frame" x="186" y="50" width="71" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Textur:" id="MRn-fW-ejn">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="bbx-wR-M0M">
+                                <rect key="frame" x="83" y="75" width="175" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Feedback-texturstorlek:" id="Rrg-s7-ZgQ">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button id="T7f-M7-uTT">
+                                <rect key="frame" x="262" y="18" width="113" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Linjekonturer" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="X6d-5W-U5O">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setWireframe:" target="-2" id="zZC-Jk-LuQ"/>
+                                </connections>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" id="Qf6-PY-9U0">
+                                <rect key="frame" x="262" y="44" width="128" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Ingen" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="6Jg-gU-PrC" id="MeD-Qz-fNp">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" title="OtherViews" id="uJj-Oj-CQ2">
+                                        <items>
+                                            <menuItem title="Ingen" state="on" id="6Jg-gU-PrC"/>
+                                            <menuItem title="Plasma" tag="1" id="vLk-GF-54F"/>
+                                            <menuItem title="Strådig" tag="2" id="a6z-Er-ez8"/>
+                                            <menuItem title="Linjär" tag="3" id="71W-eP-qO8"/>
+                                            <menuItem title="Slumpmässig" tag="4" id="QE4-wH-02U"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="setTextureType:" target="-2" id="ssS-rb-gnD"/>
+                                </connections>
+                            </popUpButton>
+                            <slider verticalHuggingPriority="750" id="Jkn-Yj-mOs">
+                                <rect key="frame" x="263" y="122" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="p0l-aC-mhc">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setFeedback:" target="-2" id="DnR-Zs-eBL"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lsk-Ak-1ij">
+                                <rect key="frame" x="396" y="124" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="1CG-4g-UKr">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" id="KX0-UK-HlK">
+                                <rect key="frame" x="263" y="97" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="mYi-qg-GAk">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setFeedbackSpeed:" target="-2" id="mbL-b4-KpD"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="xlB-fg-5k7">
+                                <rect key="frame" x="396" y="99" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="exY-hA-42f">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" id="Cxm-Wc-AtE">
+                                <rect key="frame" x="263" y="74" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="10" doubleValue="10" tickMarkPosition="below" sliderType="linear" id="Umf-7K-oue">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <action selector="setFeedbackTextureSize:" target="-2" id="54O-F3-ux6"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="chA-j8-bXM">
+                                <rect key="frame" x="396" y="76" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="left" id="uAi-dK-3q3">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.72549019609999998" green="0.12549019610000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <button verticalHuggingPriority="750" id="Iky-dP-vFd">
+                        <rect key="frame" x="346" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Avbryt" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Zj3-Nv-Pme">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeDialog:" target="-2" id="57Q-Yj-JgC"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="457" y="412.5"/>
+        </window>
+        <collectionViewItem nibName="RSSStandardSettingsView" id="hwS-6m-ZCq" customClass="RSSCollectionViewItem"/>
+    </objects>
+</document>

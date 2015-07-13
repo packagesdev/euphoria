@@ -95,6 +95,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41E79421B53CA5800BFF61E /* sv */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localized.strings; sourceTree = "<group>"; };
+		F41E79431B53CA5800BFF61E /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F41E79441B53CA6800BFF61E /* sv */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sv; path = rsscommon/sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F43D425E1B51D99200C68261 /* nowhere_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nowhere_thumbnail.png; path = images/nowhere_thumbnail.png; sourceTree = "<group>"; };
 		F43D425F1B51D99200C68261 /* nowhere_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nowhere_thumbnail@2x.png"; path = "images/nowhere_thumbnail@2x.png"; sourceTree = "<group>"; };
 		F43D42651B51DA9600C68261 /* echo_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = echo_thumbnail.png; path = images/echo_thumbnail.png; sourceTree = "<group>"; };
@@ -461,6 +464,7 @@
 				es,
 				ja,
 				it,
+				sv,
 			);
 			mainGroup = F49F65B81B4C858A0099BF2B;
 			productRefGroup = F49F65C31B4C858A0099BF2B /* Products */;
@@ -589,6 +593,7 @@
 				F4612A9C1B53193700CC438A /* es */,
 				F4E6C36A1B53B5140044C3E6 /* ja */,
 				F4A992D91B53C4390008A8DD /* it */,
+				F41E79441B53CA6800BFF61E /* sv */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -602,6 +607,7 @@
 				F4612A9B1B53192800CC438A /* es */,
 				F4E6C3691B53B50A0044C3E6 /* ja */,
 				F4A992D81B53C13F0008A8DD /* it */,
+				F41E79431B53CA5800BFF61E /* sv */,
 			);
 			name = RSSEuphoriaConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -615,6 +621,7 @@
 				F4612A9A1B53192800CC438A /* es */,
 				F4E6C3681B53B50A0044C3E6 /* ja */,
 				F4A992D71B53C13F0008A8DD /* it */,
+				F41E79421B53CA5800BFF61E /* sv */,
 			);
 			name = Localized.strings;
 			sourceTree = "<group>";
