@@ -152,6 +152,9 @@
 		F49F65C91B4C858A0099BF2B /* RSSEuphoriaView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RSSEuphoriaView.mm; sourceTree = "<group>"; };
 		F49F65D71B4C88930099BF2B /* RSSEuphoriaSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEuphoriaSettings.h; sourceTree = "<group>"; };
 		F49F65D81B4C88930099BF2B /* RSSEuphoriaSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEuphoriaSettings.m; sourceTree = "<group>"; };
+		F4A992D71B53C13F0008A8DD /* it */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localized.strings; sourceTree = "<group>"; };
+		F4A992D81B53C13F0008A8DD /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/RSSEuphoriaConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4A992D91B53C4390008A8DD /* it */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = it; path = rsscommon/it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4B6DC511B4F48530050A936 /* rsMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsMath.h; path = rsscommon/GPL/rsMath/rsMath.h; sourceTree = "<group>"; };
 		F4B6DC521B4F48530050A936 /* rsMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rsMatrix.cpp; path = rsscommon/GPL/rsMath/rsMatrix.cpp; sourceTree = "<group>"; };
 		F4B6DC531B4F48530050A936 /* rsMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsMatrix.h; path = rsscommon/GPL/rsMath/rsMatrix.h; sourceTree = "<group>"; };
@@ -457,6 +460,7 @@
 				de,
 				es,
 				ja,
+				it,
 			);
 			mainGroup = F49F65B81B4C858A0099BF2B;
 			productRefGroup = F49F65C31B4C858A0099BF2B /* Products */;
@@ -584,6 +588,7 @@
 				F4FE0ABA1B5310EB002F43F7 /* de */,
 				F4612A9C1B53193700CC438A /* es */,
 				F4E6C36A1B53B5140044C3E6 /* ja */,
+				F4A992D91B53C4390008A8DD /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -596,6 +601,7 @@
 				F4FE0AB91B5310DA002F43F7 /* de */,
 				F4612A9B1B53192800CC438A /* es */,
 				F4E6C3691B53B50A0044C3E6 /* ja */,
+				F4A992D81B53C13F0008A8DD /* it */,
 			);
 			name = RSSEuphoriaConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -608,6 +614,7 @@
 				F4FE0AB81B5310DA002F43F7 /* de */,
 				F4612A9A1B53192800CC438A /* es */,
 				F4E6C3681B53B50A0044C3E6 /* ja */,
+				F4A992D71B53C13F0008A8DD /* it */,
 			);
 			name = Localized.strings;
 			sourceTree = "<group>";
