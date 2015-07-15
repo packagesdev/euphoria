@@ -392,7 +392,7 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" id="bbx-wR-M0M">
-                                <rect key="frame" x="44" y="75" width="214" height="17"/>
+                                <rect key="frame" x="29" y="75" width="229" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Taille de  la texture de réaction :" id="Rrg-s7-ZgQ">
                                     <font key="font" metaFont="systemBold"/>

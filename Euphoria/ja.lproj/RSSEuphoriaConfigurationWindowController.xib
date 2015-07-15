@@ -85,9 +85,9 @@
                                 </buttonCell>
                             </button>
                             <textField verticalHuggingPriority="750" id="uPL-Fr-afe">
-                                <rect key="frame" x="163" y="15" width="95" height="17"/>
+                                <rect key="frame" x="150" y="15" width="108" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="ディスプレイ:" id="cnc-Jl-FQ6">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="ディスプレイ：" id="cnc-Jl-FQ6">
                                     <font key="font" size="13" name="HiraKakuProN-W6"/>
                                     <color key="textColor" white="0.14112903230000001" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
