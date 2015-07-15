@@ -1,16 +1,16 @@
 #import "RSSEuphoriaSettings.h"
 
 NSString * const RSSEuphoria_Settings_StandardSetKey=@"Standard set";
-NSString * const RSSEuphoria_Settings_WispsCount=@"Wisps count";
-NSString * const RSSEuphoria_Settings_BackgroundLayersCount=@"Background count";
-NSString * const RSSEuphoria_Settings_MeshDensity=@"Density";
-NSString * const RSSEuphoria_Settings_Visibility=@"Visibility";
-NSString * const RSSEuphoria_Settings_Speed=@"Speed";
-NSString * const RSSEuphoria_Settings_Feedback=@"Feedback";
-NSString * const RSSEuphoria_Settings_FeedbackSpeed=@"Feedback speed";
-NSString * const RSSEuphoria_Settings_FeedbackTextureSize=@"Feedback size";
-NSString * const RSSEuphoria_Settings_Texture=@"Texture";
-NSString * const RSSEuphoria_Settings_ShowWireframe=@"Wireframe";
+NSString * const RSSEuphoria_Settings_WispsCountKey=@"Wisps count";
+NSString * const RSSEuphoria_Settings_BackgroundLayersCountKey=@"Background count";
+NSString * const RSSEuphoria_Settings_MeshDensityKey=@"Density";
+NSString * const RSSEuphoria_Settings_VisibilityKey=@"Visibility";
+NSString * const RSSEuphoria_Settings_SpeedKey=@"Speed";
+NSString * const RSSEuphoria_Settings_FeedbackKey=@"Feedback";
+NSString * const RSSEuphoria_Settings_FeedbackSpeedKey=@"Feedback speed";
+NSString * const RSSEuphoria_Settings_FeedbackTextureSizeKey=@"Feedback size";
+NSString * const RSSEuphoria_Settings_TextureKey=@"Texture";
+NSString * const RSSEuphoria_Settings_ShowWireframeKey=@"Wireframe";
 
 @implementation RSSEuphoriaSettings
 
@@ -29,16 +29,16 @@ NSString * const RSSEuphoria_Settings_ShowWireframe=@"Wireframe";
 		
 		if (_standardSet==RSSEuphoriaSetCustom)
 		{
-			_numberOfWisps=[inDictionary[RSSEuphoria_Settings_WispsCount] unsignedIntegerValue];
-			_numberOfBackgroundLayers=[inDictionary[RSSEuphoria_Settings_BackgroundLayersCount] unsignedIntegerValue];
-			_meshDensity=[inDictionary[RSSEuphoria_Settings_MeshDensity] unsignedIntegerValue];
-			_visibility=[inDictionary[RSSEuphoria_Settings_Visibility] unsignedIntegerValue];
-			_speed=[inDictionary[RSSEuphoria_Settings_Speed] unsignedIntegerValue];
-			_feedback=[inDictionary[RSSEuphoria_Settings_Feedback] unsignedIntegerValue];
-			_feedbackSpeed=[inDictionary[RSSEuphoria_Settings_FeedbackSpeed] unsignedIntegerValue];
-			_feedbackTextureSize=[inDictionary[RSSEuphoria_Settings_FeedbackTextureSize] unsignedIntegerValue];
-			_texture=[inDictionary[RSSEuphoria_Settings_Texture] unsignedIntegerValue];
-			_showWireframe=[inDictionary[RSSEuphoria_Settings_ShowWireframe] boolValue];
+			_numberOfWisps=[inDictionary[RSSEuphoria_Settings_WispsCountKey] unsignedIntegerValue];
+			_numberOfBackgroundLayers=[inDictionary[RSSEuphoria_Settings_BackgroundLayersCountKey] unsignedIntegerValue];
+			_meshDensity=[inDictionary[RSSEuphoria_Settings_MeshDensityKey] unsignedIntegerValue];
+			_visibility=[inDictionary[RSSEuphoria_Settings_VisibilityKey] unsignedIntegerValue];
+			_speed=[inDictionary[RSSEuphoria_Settings_SpeedKey] unsignedIntegerValue];
+			_feedback=[inDictionary[RSSEuphoria_Settings_FeedbackKey] unsignedIntegerValue];
+			_feedbackSpeed=[inDictionary[RSSEuphoria_Settings_FeedbackSpeedKey] unsignedIntegerValue];
+			_feedbackTextureSize=[inDictionary[RSSEuphoria_Settings_FeedbackTextureSizeKey] unsignedIntegerValue];
+			_texture=[inDictionary[RSSEuphoria_Settings_TextureKey] unsignedIntegerValue];
+			_showWireframe=[inDictionary[RSSEuphoria_Settings_ShowWireframeKey] boolValue];
 		}
 		else if (_standardSet!=RSSEuphoriaSetRandom)
 		{
@@ -57,16 +57,16 @@ NSString * const RSSEuphoria_Settings_ShowWireframe=@"Wireframe";
 	{
 		tMutableDictionary[RSSEuphoria_Settings_StandardSetKey]=@(_standardSet);
 		
-		tMutableDictionary[RSSEuphoria_Settings_WispsCount]=@(_numberOfWisps);
-		tMutableDictionary[RSSEuphoria_Settings_BackgroundLayersCount]=@(_numberOfBackgroundLayers);
-		tMutableDictionary[RSSEuphoria_Settings_MeshDensity]=@(_meshDensity);
-		tMutableDictionary[RSSEuphoria_Settings_Visibility]=@(_visibility);
-		tMutableDictionary[RSSEuphoria_Settings_Speed]=@(_speed);
-		tMutableDictionary[RSSEuphoria_Settings_Feedback]=@(_feedback);
-		tMutableDictionary[RSSEuphoria_Settings_FeedbackSpeed]=@(_feedbackSpeed);
-		tMutableDictionary[RSSEuphoria_Settings_FeedbackTextureSize]=@(_feedbackTextureSize);
-		tMutableDictionary[RSSEuphoria_Settings_Texture]=@(_texture);
-		tMutableDictionary[RSSEuphoria_Settings_ShowWireframe]=@(_showWireframe);
+		tMutableDictionary[RSSEuphoria_Settings_WispsCountKey]=@(_numberOfWisps);
+		tMutableDictionary[RSSEuphoria_Settings_BackgroundLayersCountKey]=@(_numberOfBackgroundLayers);
+		tMutableDictionary[RSSEuphoria_Settings_MeshDensityKey]=@(_meshDensity);
+		tMutableDictionary[RSSEuphoria_Settings_VisibilityKey]=@(_visibility);
+		tMutableDictionary[RSSEuphoria_Settings_SpeedKey]=@(_speed);
+		tMutableDictionary[RSSEuphoria_Settings_FeedbackKey]=@(_feedback);
+		tMutableDictionary[RSSEuphoria_Settings_FeedbackSpeedKey]=@(_feedbackSpeed);
+		tMutableDictionary[RSSEuphoria_Settings_FeedbackTextureSizeKey]=@(_feedbackTextureSize);
+		tMutableDictionary[RSSEuphoria_Settings_TextureKey]=@(_texture);
+		tMutableDictionary[RSSEuphoria_Settings_ShowWireframeKey]=@(_showWireframe);
 	}
 	
 	return [tMutableDictionary copy];
