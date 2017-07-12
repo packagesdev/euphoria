@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2000-2005  Terence M. Welsh
+ * Copyright (C) 2000-2015  Terence M. Welsh
  *
  * This file is part of Euphoria.
  *
@@ -265,13 +265,11 @@ void scene::draw()
 	float tElapsedTime=(tCurentTime-_lastRefresh)*0.001;
 	_lastRefresh=tCurentTime;
 	
-	int i;
-	
 	// Update wisps
-	for(i=0; i<wispsCount; i++)
+	for(int i=0; i<wispsCount; i++)
 		wisps[i].update(visibility,tElapsedTime);
 	
-	for(i=0; i<backgroundLayersCount; i++)
+	for(int i=0; i<backgroundLayersCount; i++)
 		backgroundLayers[i].update(visibility,tElapsedTime);
 	
 	
@@ -281,7 +279,7 @@ void scene::draw()
 		float feedbackIntensity = feedback / 101.0f;
 		
 		// update feedback variables
-		for(i=0; i<4; i++)
+		for(int i=0; i<4; i++)
 		{
 			fr[i] += tElapsedTime * fv[i];
 			if(fr[i] > PIx2)
@@ -293,7 +291,7 @@ void scene::draw()
 		f[2] = 0.2f * cos((double)fr[2]);
 		f[3] = 0.8f * cos((double)fr[3]);
 		
-		for(i=0; i<3; i++)
+		for(int i=0; i<3; i++)
 		{
 			lr[i] += tElapsedTime * lv[i];
 			if(lr[i] > PIx2)
@@ -331,10 +329,10 @@ void scene::draw()
 		glPopMatrix();
 		glBindTexture(GL_TEXTURE_2D, textureID);
 		
-		for(i=0; i<backgroundLayersCount; i++)
+		for(int i=0; i<backgroundLayersCount; i++)
 			backgroundLayers[i].drawAsBackground(wireframe);
 		
-		for(i=0; i<wispsCount; i++)
+		for(int i=0; i<wispsCount; i++)
 			wisps[i].draw(wireframe);
 		
 		// readback feedback texture
@@ -379,10 +377,10 @@ void scene::draw()
 	glBindTexture(GL_TEXTURE_2D, textureID);
 	
 	//
-	for(i=0; i<backgroundLayersCount; i++)
+	for(int i=0; i<backgroundLayersCount; i++)
 		backgroundLayers[i].drawAsBackground(wireframe);
 	
-	for(i=0; i<wispsCount; i++)
+	for(int i=0; i<wispsCount; i++)
 		wisps[i].draw(wireframe);
 }
 
@@ -418,21 +416,19 @@ wisp::~wisp()
 
 void wisp::initWithScene(scene *inScene)
 {
-	int i, j;
 	float recHalfDens = 1.0f / (inScene->meshDensity * 0.5f);
-	float * pointer;
 	
 	meshDensity=inScene->meshDensity;
 	
 	vertices = new float**[meshDensity+1];
 	
-	for(i=0; i<=meshDensity; i++)
+	for(int i=0; i<=meshDensity; i++)
 	{
 		vertices[i] = new float*[meshDensity+1];
 		
-		for(j=0; j<=meshDensity; j++)
+		for(int j=0; j<=meshDensity; j++)
 		{
-			pointer=vertices[i][j] = new float[7];
+			float * pointer=vertices[i][j] = new float[7];
 			pointer[3] = float(i) * recHalfDens - 1.0f;  // x position on grid
 			pointer[4] = float(j) * recHalfDens - 1.0f;  // y position on grid
 			// distance squared from the center
@@ -443,7 +439,7 @@ void wisp::initWithScene(scene *inScene)
 	}
 	
 	// initialize constants
-	for(i=0; i<NUMCONSTS; i++)
+	for(int i=0; i<NUMCONSTS; i++)
 	{
 		c[i] = rsRandf(2.0f) - 1.0f;
 		cr[i] = rsRandf(PIx2);
@@ -460,15 +456,13 @@ void wisp::initWithScene(scene *inScene)
 
 void wisp::update(int inVisibility,float inElapsedTime)
 {
-    int i, j;
     rsVec up, right, crossvec;
     // visibility constants
     float viscon1 = inVisibility * 0.01f;
     float viscon2 = 1.0f / viscon1;
-    float * pointer;
     
     // update constants
-    for(i=0; i<NUMCONSTS; i++)
+    for(int i=0; i<NUMCONSTS; i++)
     {
         cr[i] += cv[i] * inElapsedTime;
         if(cr[i] > PIx2)
@@ -478,11 +472,11 @@ void wisp::update(int inVisibility,float inElapsedTime)
     }
 
     // update vertex positions
-    for(i=0; i<=meshDensity; i++)
+    for(int i=0; i<=meshDensity; i++)
     {
-        for(j=0; j<=meshDensity; j++)
+        for(int j=0; j<=meshDensity; j++)
         {
-            pointer=vertices[i][j];
+            float * pointer=vertices[i][j];
             
             pointer[0] = pointer[3] * pointer[3] * pointer[4] * c[0]
 				+ pointer[5] * c[1] + 0.5f * c[2];
@@ -494,9 +488,9 @@ void wisp::update(int inVisibility,float inElapsedTime)
     }
 
     // update vertex normals for most of mesh
-    for(i=1; i<meshDensity; i++)
+    for(int i=1; i<meshDensity; i++)
     {
-        for(j=1; j<meshDensity; j++)
+        for(int j=1; j<meshDensity; j++)
         {
             up.set(vertices[i][j+1][0] - vertices[i][j-1][0],
                     vertices[i][j+1][1] - vertices[i][j-1][1],
@@ -566,20 +560,17 @@ void wisp::update(int inVisibility,float inElapsedTime)
 
 void wisp::draw(bool inShowWireframe)
 {
-    int i, j;
-    float * pointer;
-    
     glPushMatrix();
 
     if(inShowWireframe==true)
     {
-        for(i=1; i<meshDensity; i++)
+        for(int i=1; i<meshDensity; i++)
         {
             glBegin(GL_LINE_STRIP);
             
-            for(j=0; j<=meshDensity; j++)
+            for(int j=0; j<=meshDensity; j++)
             {
-                pointer=vertices[i][j];
+                float * pointer=vertices[i][j];
                 
                 glColor3f(rgb[0] + pointer[6] - 1.0f, rgb[1] + pointer[6] - 1.0f, rgb[2] + pointer[6] - 1.0f);
                 glTexCoord2d(pointer[3] - pointer[0], pointer[4] - pointer[1]);
@@ -588,13 +579,13 @@ void wisp::draw(bool inShowWireframe)
             glEnd();
         }
         
-        for(j=1; j<meshDensity; j++)
+        for(int j=1; j<meshDensity; j++)
         {
             glBegin(GL_LINE_STRIP);
             
-            for(i=0; i<=meshDensity; i++)
+            for(int i=0; i<=meshDensity; i++)
             {
-                pointer=vertices[i][j];
+                float * pointer=vertices[i][j];
                 
                 glColor3f(rgb[0] + pointer[6] - 1.0f, rgb[1] + pointer[6] - 1.0f, rgb[2] + pointer[6] - 1.0f);
                 glTexCoord2d(pointer[3] - pointer[0], pointer[4] - pointer[1]);
@@ -605,13 +596,13 @@ void wisp::draw(bool inShowWireframe)
     }
     else
     {
-        for(i=0; i<meshDensity; i++)
+        for(int i=0; i<meshDensity; i++)
         {
             glBegin(GL_TRIANGLE_STRIP);
             
-            for(j=0; j<=meshDensity; j++)
+            for(int j=0; j<=meshDensity; j++)
             {
-                pointer=vertices[i][j];
+                float * pointer=vertices[i][j];
                     
                 glColor3f(rgb[0] + vertices[i+1][j][6] - 1.0f, rgb[1] + vertices[i+1][j][6] - 1.0f, rgb[2] + vertices[i+1][j][6] - 1.0f);
                 glTexCoord2d(vertices[i+1][j][3] - vertices[i+1][j][0], vertices[i+1][j][4] - vertices[i+1][j][1]);
@@ -630,21 +621,18 @@ void wisp::draw(bool inShowWireframe)
 
 void wisp::drawAsBackground(bool inShowWireframe)
 {
-    int i, j;
-    float * pointer;
-    
     glPushMatrix();
     glTranslatef(c[0] * 0.2f, c[1] * 0.2f, 1.6f);
 
     if(inShowWireframe==true)
     {
-        for(i=1; i<meshDensity; i++)
+        for(int i=1; i<meshDensity; i++)
         {
             glBegin(GL_LINE_STRIP);
             
-            for(j=0; j<=meshDensity; j++)
+            for(int j=0; j<=meshDensity; j++)
             {
-                pointer=vertices[i][j];
+                float * pointer=vertices[i][j];
                 
                 glColor3f(rgb[0] + pointer[6] - 1.0f, rgb[1] + pointer[6] - 1.0f, rgb[2] + pointer[6] - 1.0f);
                 glTexCoord2d(pointer[3] - pointer[0], pointer[4] - pointer[1]);
@@ -653,13 +641,13 @@ void wisp::drawAsBackground(bool inShowWireframe)
             glEnd();
         }
         
-        for(j=1; j<meshDensity; j++)
+        for(int j=1; j<meshDensity; j++)
         {
             glBegin(GL_LINE_STRIP);
             
-            for(i=0; i<=meshDensity; i++)
+            for(int i=0; i<=meshDensity; i++)
             {
-                pointer=vertices[i][j];
+                float * pointer=vertices[i][j];
                 
                 glColor3f(rgb[0] + pointer[6] - 1.0f, rgb[1] + pointer[6] - 1.0f, rgb[2] + pointer[6] - 1.0f);
                 glTexCoord2d(pointer[3] - pointer[0], pointer[4] - pointer[1]);
@@ -670,13 +658,13 @@ void wisp::drawAsBackground(bool inShowWireframe)
     }
     else
     {
-        for(i=0; i<meshDensity; i++)
+        for(int i=0; i<meshDensity; i++)
         {
             glBegin(GL_TRIANGLE_STRIP);
             
-            for(j=0; j<=meshDensity; j++)
+            for(int j=0; j<=meshDensity; j++)
             {
-                pointer=vertices[i][j];
+                float * pointer=vertices[i][j];
                     
                 glColor3f(rgb[0] + vertices[i+1][j][6] - 1.0f, rgb[1] + vertices[i+1][j][6] - 1.0f, rgb[2] + vertices[i+1][j][6] - 1.0f);
                 glTexCoord2d(vertices[i+1][j][3] - vertices[i+1][j][0], vertices[i+1][j][4] - vertices[i+1][j][1]);
