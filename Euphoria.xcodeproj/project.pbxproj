@@ -312,9 +312,9 @@
 		F49F65D41B4C87A40099BF2B /* GPL */ = {
 			isa = PBXGroup;
 			children = (
+				F4672ABA1B4DCF5D00664E05 /* texture.h */,
 				F4672AB81B4DCF5D00664E05 /* Euphoria.h */,
 				F4672AB71B4DCF5D00664E05 /* Euphoria.cpp */,
-				F4672ABA1B4DCF5D00664E05 /* texture.h */,
 			);
 			name = GPL;
 			sourceTree = "<group>";
@@ -710,9 +710,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = NO;
+				CURRENT_PROJECT_VERSION = 4;
 				INFOPLIST_FILE = Euphoria/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -721,9 +723,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = NO;
+				CURRENT_PROJECT_VERSION = 4;
 				INFOPLIST_FILE = Euphoria/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
