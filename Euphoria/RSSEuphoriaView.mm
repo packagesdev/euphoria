@@ -188,14 +188,7 @@
 		return;
 	}
 	
-	[self lockFocus];
-	
 	[[_openGLView openGLContext] makeCurrentContext];
-	
-	glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
-	glClear(GL_COLOR_BUFFER_BIT);
-	
-	[[_openGLView openGLContext] flushBuffer];
 	
 	NSRect tPixelBounds=[_openGLView convertRectToBacking:[_openGLView bounds]];
 	NSSize tSize=tPixelBounds.size;
@@ -213,8 +206,6 @@
 	
 	const GLint tSwapInterval=1;
 	CGLSetParameter(CGLGetCurrentContext(), kCGLCPSwapInterval,&tSwapInterval);
-	
-	[self unlockFocus];
 }
 
 - (void)stopAnimation
@@ -234,12 +225,8 @@
 	{
 		[[_openGLView openGLContext] makeCurrentContext];
 		
-		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-		
 		if (_scene!=NULL)
 			_scene->draw();
-		
-		glFinish();
 		
 		[[_openGLView openGLContext] flushBuffer];
 	}

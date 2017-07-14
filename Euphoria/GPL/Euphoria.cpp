@@ -382,6 +382,8 @@ void scene::draw()
 	
 	for(int i=0; i<wispsCount; i++)
 		wisps[i].draw(wireframe);
+	
+	glFinish();
 }
 
 #pragma mark -
