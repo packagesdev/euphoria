@@ -70,7 +70,7 @@
 {
 	[super windowDidLoad];
 	
-	_numberFormatter=[[NSNumberFormatter alloc] init];
+	_numberFormatter=[NSNumberFormatter new];
 	
 	if (_numberFormatter!=nil)
 	{
@@ -154,35 +154,35 @@
 	[self _selectCollectionViewItemWithTag:tEuphoriaSettings.standardSet];
 	
 	
-	[_numberOfWispsSlider setIntegerValue:tEuphoriaSettings.numberOfWisps];
-	[_numberOfWispsLabel setIntegerValue:tEuphoriaSettings.numberOfWisps];
+	_numberOfWispsSlider.integerValue=tEuphoriaSettings.numberOfWisps;
+	_numberOfWispsLabel.integerValue=tEuphoriaSettings.numberOfWisps;
 	
-	[_numberOfBackgroundLayersSlider setIntegerValue:tEuphoriaSettings.numberOfBackgroundLayers];
-	[_numberOfBackgroundLayersLabel setIntegerValue:tEuphoriaSettings.numberOfBackgroundLayers];
+	_numberOfBackgroundLayersSlider.integerValue=tEuphoriaSettings.numberOfBackgroundLayers;
+	_numberOfBackgroundLayersLabel.integerValue=tEuphoriaSettings.numberOfBackgroundLayers;
 
 	
-	[_meshDensitySlider setIntegerValue:tEuphoriaSettings.meshDensity];
-	[_meshDensityLabel setIntegerValue:tEuphoriaSettings.meshDensity];
+	_meshDensitySlider.integerValue=tEuphoriaSettings.meshDensity;
+	_meshDensityLabel.integerValue=tEuphoriaSettings.meshDensity;
 	
-	[_visibilitySlider setIntegerValue:tEuphoriaSettings.visibility];
-	[_visibilityLabel setIntegerValue:tEuphoriaSettings.visibility];
+	_visibilitySlider.integerValue=tEuphoriaSettings.visibility;
+	_visibilityLabel.integerValue=tEuphoriaSettings.visibility;
 	
-	[_speedSlider setIntegerValue:tEuphoriaSettings.speed];
-	[_speedLabel setIntegerValue:tEuphoriaSettings.speed];
+	_speedSlider.integerValue=tEuphoriaSettings.speed;
+	_speedLabel.integerValue=tEuphoriaSettings.speed;
 	
 	
-	[_feedbackSlider setIntegerValue:tEuphoriaSettings.feedback];
-	[_feedbackLabel setIntegerValue:tEuphoriaSettings.feedback];
+	_feedbackSlider.integerValue=tEuphoriaSettings.feedback;
+	_feedbackLabel.integerValue=tEuphoriaSettings.feedback;
 	
-	[_feedbackSpeedSlider setIntegerValue:tEuphoriaSettings.feedbackSpeed];
-	[_feedbackSpeedLabel setIntegerValue:tEuphoriaSettings.feedbackSpeed];
+	_feedbackSpeedSlider.integerValue=tEuphoriaSettings.feedbackSpeed;
+	_feedbackSpeedLabel.integerValue=tEuphoriaSettings.feedbackSpeed;
 	
-	[_feedbackTextureSizeSlider setIntegerValue:tEuphoriaSettings.feedbackTextureSize];
-	[_feedbackTextureSizeLabel setIntegerValue:tEuphoriaSettings.feedbackTextureSize];
+	_feedbackTextureSizeSlider.integerValue=tEuphoriaSettings.feedbackTextureSize;
+	_feedbackTextureSizeLabel.integerValue=tEuphoriaSettings.feedbackTextureSize;
 	
 	[_textureTypePopupButton selectItemWithTag:tEuphoriaSettings.texture];
 	
-	[_wireframeCheckbox setState:(tEuphoriaSettings.texture==YES) ? NSOnState : NSOffState];
+	_wireframeCheckbox.state=(tEuphoriaSettings.texture==YES) ? NSOnState : NSOffState;
 }
 
 #pragma mark -
@@ -224,7 +224,7 @@
 	{
 		tEuphoriaSettings.numberOfWisps=[sender integerValue];
 		
-		[_numberOfWispsLabel setIntegerValue:tEuphoriaSettings.numberOfWisps];
+		_numberOfWispsLabel.integerValue=tEuphoriaSettings.numberOfWisps;
 		
 		[self _setAsCustomSet];
 	}
@@ -238,7 +238,7 @@
 	{
 		tEuphoriaSettings.numberOfBackgroundLayers=[sender integerValue];
 		
-		[_numberOfBackgroundLayersLabel setIntegerValue:tEuphoriaSettings.numberOfBackgroundLayers];
+		_numberOfBackgroundLayersLabel.integerValue=tEuphoriaSettings.numberOfBackgroundLayers;
 		
 		[self _setAsCustomSet];
 	}
@@ -252,7 +252,7 @@
 	{
 		tEuphoriaSettings.meshDensity=[sender integerValue];
 		
-		[_meshDensityLabel setIntegerValue:tEuphoriaSettings.meshDensity];
+		_meshDensityLabel.integerValue=tEuphoriaSettings.meshDensity;
 		
 		[self _setAsCustomSet];
 	}
@@ -266,7 +266,7 @@
 	{
 		tEuphoriaSettings.visibility=[sender integerValue];
 		
-		[_visibilityLabel setIntegerValue:tEuphoriaSettings.visibility];
+		_visibilityLabel.integerValue=tEuphoriaSettings.visibility;
 		
 		[self _setAsCustomSet];
 	}
@@ -280,7 +280,7 @@
 	{
 		tEuphoriaSettings.speed=[sender integerValue];
 		
-		[_speedLabel setIntegerValue:tEuphoriaSettings.speed];
+		_speedLabel.integerValue=tEuphoriaSettings.speed;
 		
 		[self _setAsCustomSet];
 	}
@@ -294,7 +294,7 @@
 	{
 		tEuphoriaSettings.feedback=[sender integerValue];
 		
-		[_feedbackLabel setIntegerValue:tEuphoriaSettings.feedback];
+		_feedbackLabel.integerValue=tEuphoriaSettings.feedback;
 		
 		[self _setAsCustomSet];
 	}
@@ -308,7 +308,7 @@
 	{
 		tEuphoriaSettings.feedbackSpeed=[sender integerValue];
 		
-		[_feedbackSpeedLabel setIntegerValue:tEuphoriaSettings.feedbackSpeed];
+		_feedbackSpeedLabel.integerValue=tEuphoriaSettings.feedbackSpeed;
 		
 		[self _setAsCustomSet];
 	}
@@ -322,7 +322,7 @@
 	{
 		tEuphoriaSettings.feedbackTextureSize=[sender integerValue];
 		
-		[_feedbackTextureSizeLabel setIntegerValue:tEuphoriaSettings.feedbackTextureSize];
+		_feedbackTextureSizeLabel.integerValue=tEuphoriaSettings.feedbackTextureSize;
 		
 		[self _setAsCustomSet];
 	}
@@ -330,11 +330,13 @@
 
 - (IBAction)setTextureType:(id)sender
 {
+    RSSEuphoriaTextureType nTexture=[sender selectedTag];
+    
 	RSSEuphoriaSettings * tEuphoriaSettings=(RSSEuphoriaSettings *) sceneSettings;
 	
-	if (tEuphoriaSettings.texture!=[sender selectedTag])
+	if (tEuphoriaSettings.texture!=nTexture)
 	{
-		tEuphoriaSettings.texture=[sender selectedTag];
+		tEuphoriaSettings.texture=nTexture;
 		
 		[self _setAsCustomSet];
 	}
@@ -342,11 +344,13 @@
 
 - (IBAction)setWireframe:(id)sender
 {
-	RSSEuphoriaSettings * tEuphoriaSettings=(RSSEuphoriaSettings *) sceneSettings;
+    BOOL nValue=([sender state]==NSOnState);
+    
+    RSSEuphoriaSettings * tEuphoriaSettings=(RSSEuphoriaSettings *) sceneSettings;
 	
-	if (tEuphoriaSettings.showWireframe!=([sender state]==NSOnState))
+	if (tEuphoriaSettings.showWireframe!=nValue)
 	{
-		tEuphoriaSettings.showWireframe=([sender state]==NSOnState);
+		tEuphoriaSettings.showWireframe=nValue;
 		
 		[self _setAsCustomSet];
 	}
